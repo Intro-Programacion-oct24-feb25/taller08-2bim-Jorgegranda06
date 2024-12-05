@@ -15,6 +15,25 @@ public class Problema02 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+            double fahrenheit = 20;
+        double incremento = 4;
+        double acumulador = 0;
+        double celsius;
+
+     for (int i = 0; i <= 20; i++) {
+            celsius = (fahrenheit - 32) * 5 / 9;
+            acumulador = acumulador + celsius;  
+
+            System.out.printf("Operación(%d) Fahrenheit: %.2f ===> "
+                    + "Celsius: %.2f\n", i, fahrenheit, celsius);
+
+            fahrenheit = fahrenheit + incremento;  
+        }
+
+        System.out.println("\nAcumulador de Celsius: " + acumulador);
     }
-    
 }
+
+    
+    
+
